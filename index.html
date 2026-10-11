@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Petits cours gratuits</title>
+<meta name="description" content="Des exercices gratuits avec l'audio : maternelle, grammaire de CM1, et l'examen civique (carte de résident et naturalisation).">
+<meta name="theme-color" content="#1F3C88">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+:root{
+  --bg:#F2F4F9; --card:#FFFFFF; --ink:#131A33; --muted:#5B6382; --line:#DCE0EC;
+  --accent:#1F3C88; --accent-soft:#E2E8F8; --kid:#E2641B; --kid-soft:#FDEBDD; --red:#C8293B;
+  --display:'Bricolage Grotesque','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+  --body:'Atkinson Hyperlegible','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root{
+  color-scheme:dark; --bg:#0E1222; --card:#171C33; --ink:#ECEEFA; --muted:#A3A9C8; --line:#2A3158;
+  --accent:#8EA6F4; --accent-soft:#222B55; --kid:#FF9A5C; --kid-soft:#3A2416; --red:#FF6F7D;}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
+.wrap{max-width:760px;margin:0 auto;padding:calc(28px + env(safe-area-inset-top,0px)) 16px calc(40px + env(safe-area-inset-bottom,0px))}
+header{display:grid;gap:6px;margin-bottom:26px}
+.flag{display:inline-block;width:10px;height:22px;border-radius:2px;background:linear-gradient(90deg,var(--accent) 0 33%,#fff 33% 66%,var(--red) 66%);border:1px solid var(--line);vertical-align:-3px;margin-right:10px}
+h1{font:800 clamp(28px,6vw,40px)/1.1 var(--display);margin:0;text-wrap:balance}
+.lead{margin:0;color:var(--muted);max-width:60ch}
+.lead span{display:block}
+h2{font:800 20px/1.2 var(--display);margin:30px 0 12px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+h2 small{font:600 14px var(--body);color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:14px}
+.course{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:18px;display:grid;gap:10px;align-content:start}
+.course .who{justify-self:start;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.kid .who{background:var(--kid-soft);color:var(--kid)}
+.course h3{font:800 21px/1.2 var(--display);margin:0}
+.course p{margin:0;color:var(--muted);font-size:15px}
+.course p.zh{font-size:14px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.links a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:15px;padding:10px 14px;border-radius:12px;background:var(--accent);color:#fff}
+.kid .links a{background:var(--kid)}
+.links a.alt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.kid .links a.alt{color:var(--kid);border-color:var(--kid)}
+.links a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.facts{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted)}
+footer{margin-top:34px;padding-top:18px;border-top:2px solid var(--line);font-size:14px;color:var(--muted);display:grid;gap:6px}
+footer a{color:var(--accent)}
+.mail{user-select:all;color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1><span class="flag" aria-hidden="true"></span>Petits cours gratuits</h1>
+  <p class="lead"><span>Des exercices courts, avec la voix, faits par un parent pour sa famille et partagés avec tout le monde.</span>
+  <span lang="zh">一位家长为家人做的练习，免费分享给大家。都有语音朗读，手机上就能用，不用注册。</span></p>
+</header>
+
+<h2>Pour les enfants <small lang="zh">给孩子</small></h2>
+<div class="grid">
+  <article class="course kid">
+    <span class="who">4–5 ans · moyenne section</span>
+    <h3>Moyenne section</h3>
+    <p>Pas besoin de savoir lire : chaque question est lue à voix haute, on répond en touchant une image. Chaque exercice indique s’il est du niveau MS ou déjà GS.</p>
+    <p class="zh" lang="zh">中班孩子不认字也能做：题目全部朗读，点图片作答；每题标明是中班还是大班水平。</p>
+    <div class="facts"><span>75 questions</span><span>mots, sons, nombres, formes, le monde</span></div>
+    <div class="links"><a href="https://twang84861722.github.io/maternelle-ms/" data-go="maternelle-ms">Commencer →</a></div>
+  </article>
+  <article class="course kid">
+    <span class="who">9–10 ans · CM1</span>
+    <h3>Grammaire CM1</h3>
+    <p>La nature des mots, le sujet et le verbe, l’accord : des exercices courts, la phrase et l’explication lues à voix haute.</p>
+    <p class="zh" lang="zh">CM1 语法：词性、主语和动词、主谓配合。家长页有法语版和中文版。</p>
+    <div class="facts"><span>7 étapes</span><span>un grand défi</span></div>
+    <div class="links"><a href="https://twang84861722.github.io/grammaire-cm1/fr/" data-go="grammaire-fr">Commencer →</a>
+      <a class="alt" href="https://twang84861722.github.io/grammaire-cm1/" lang="zh" data-go="grammaire-zh">家长页中文版</a></div>
+  </article>
+</div>
+
+<h2>Pour les adultes <small lang="zh">给大人</small></h2>
+<div class="grid">
+  <article class="course">
+    <span class="who">Examen civique · carte de résident</span>
+    <h3>Examen civique CR</h3>
+    <p>Les 209 questions officielles de connaissance pour la carte de résident, avec des explications, l’audio et un examen blanc de 40 questions.</p>
+    <p class="zh" lang="zh">十年居留卡公民考试：209 道官方知识题，带解释、录音、听力和 40 题模拟考试。</p>
+    <div class="links"><a href="https://twang84861722.github.io/civique-cr/fr/" data-go="cr-fr">Français</a>
+      <a class="alt" href="https://twang84861722.github.io/civique-cr/" lang="zh" data-go="cr-zh">中文版</a></div>
+  </article>
+  <article class="course">
+    <span class="who">Examen civique · naturalisation</span>
+    <h3>Examen civique naturalisation</h3>
+    <p>Les 259 questions officielles de connaissance pour la naturalisation, avec des explications, l’audio et un examen blanc.</p>
+    <p class="zh" lang="zh">入籍公民考试：259 道官方知识题，带解释、录音、听力和模拟考试。</p>
+    <div class="links"><a href="https://twang84861722.github.io/civique-cr/nat/fr/" data-go="nat-fr">Français</a>
+      <a class="alt" href="https://twang84861722.github.io/civique-cr/nat/" lang="zh" data-go="nat-zh">中文版</a></div>
+  </article>
+</div>
+
+<footer>
+  <span>Applications non officielles, gratuites, sans compte. La progression reste dans votre navigateur. Les visites sont comptées de façon anonyme (GoatCounter, sans cookie).</span>
+  <span lang="zh">非官方、免费、无需注册；学习进度只保存在你自己的浏览器里。本站用 GoatCounter 匿名统计访问量，不用 cookie。</span>
+  <span>Une erreur, une idée ? <span class="mail" id="mail"></span></span>
+</footer>
+</div>
+<script>
+// adresse assemblée au chargement (moins exposée aux robots)
+document.getElementById('mail').textContent=['twang8496','gmail.com'].join('@');
+if(/\.github\.io$/.test(location.hostname)){
+  const g=document.createElement('script');g.async=true;g.src='https://gc.zgo.at/count.js';
+  g.dataset.goatcounter='https://twang84861722.goatcounter.com/count';document.head.appendChild(g);
+  document.addEventListener('click',e=>{const a=e.target.closest('a[data-go]');if(a&&window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'home/go-'+a.dataset.go,title:'Accueil → '+a.dataset.go,event:true})}catch(err){}}});
+}
+</script>
+</body>
+</html>
